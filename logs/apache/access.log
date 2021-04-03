@@ -180,3 +180,17 @@
 127.0.0.1 - - [03/Apr/2021:16:37:52 +0900] "GET /hello-world/ HTTP/1.0" 200 41016
 127.0.0.1 - - [03/Apr/2021:16:37:53 +0900] "GET /wp-includes/js/comment-reply.min.js?ver=5.7 HTTP/1.0" 200 2982
 127.0.0.1 - - [03/Apr/2021:16:38:01 +0900] "GET /2021/04/ HTTP/1.0" 200 36434
+127.0.0.1 - - [03/Apr/2021:17:06:57 +0900] "GET /2021/04/ HTTP/1.0" 200 36419
+127.0.0.1 - - [03/Apr/2021:17:06:57 +0900] "GET /favicon.ico HTTP/1.0" 302 -
+127.0.0.1 - - [03/Apr/2021:17:06:57 +0900] "GET /wp-includes/images/w-logo-blue-white-bg.png HTTP/1.0" 200 4119
+127.0.0.1 - - [03/Apr/2021:17:08:10 +0900] "GET /2021/04/ HTTP/1.0" 200 36419
+127.0.0.1 - - [03/Apr/2021:17:08:10 +0900] "GET /favicon.ico HTTP/1.0" 302 -
+127.0.0.1 - - [03/Apr/2021:17:08:11 +0900] "GET /wp-includes/images/w-logo-blue-white-bg.png HTTP/1.0" 200 4119
+127.0.0.1 - - [03/Apr/2021:17:08:14 +0900] "GET /hello-world/ HTTP/1.0" 200 41047
+127.0.0.1 - - [03/Apr/2021:17:22:10 +0900] "POST /wp-cron.php?doing_wp_cron=1617438130.0264179706573486328125 HTTP/1.0" 200 -
+127.0.0.1 - - [03/Apr/2021:17:22:09 +0900] "GET /hello-world/ HTTP/1.0" 200 19
+127.0.0.1 - - [03/Apr/2021:17:22:10 +0900] "GET /favicon.ico HTTP/1.0" 302 -
+127.0.0.1 - - [03/Apr/2021:17:22:10 +0900] "GET /wp-includes/images/w-logo-blue-white-bg.png HTTP/1.0" 200 4119
+127.0.0.1 - - [03/Apr/2021:17:23:40 +0900] "GET /hello-world/ HTTP/1.0" 200 24
+127.0.0.1 - - [03/Apr/2021:17:23:40 +0900] "GET /favicon.ico HTTP/1.0" 302 -
+127.0.0.1 - - [03/Apr/2021:17:23:40 +0900] "GET /wp-includes/images/w-logo-blue-white-bg.png HTTP/1.0" 200 4119
