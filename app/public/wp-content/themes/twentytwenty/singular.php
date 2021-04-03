@@ -14,6 +14,8 @@ get_header();
 
 <main id="site-content" role="main">
 
+	<p>singular.phpです。</p>
+
 	<?php
 
 	if ( have_posts() ) {
