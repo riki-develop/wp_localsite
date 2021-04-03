@@ -1,4 +1,0 @@
-AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using rikinoMacBook-Pro.local. Set the 'ServerName' directive globally to suppress this message
-[Sat Apr 03 16:10:06.604916 2021] [mpm_event:notice] [pid 1078:tid 4427687360] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
-[Sat Apr 03 16:10:06.607577 2021] [core:notice] [pid 1078:tid 4427687360] AH00094: Command line: '/Users/riki/Library/Application Support/Local/lightning-services/apache-2.4.43+6/bin/darwin/bin/httpd -D FOREGROUND -f /Users/riki/Library/Application Support/Local/run/SPhuieV6d/conf/apache/apache2.conf'
-[Sat Apr 03 16:11:44.847793 2021] [core:notice] [pid 1078:tid 4427687360] AH00052: child pid 1147 exit signal Segmentation fault (11)
