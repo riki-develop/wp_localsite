@@ -21,6 +21,7 @@
   <!-- Custom styles for this template -->
   <link href="http://mysite.local/wp-content/themes/myblog/css/clean-blog.min.css" rel="stylesheet">
 
+  <!-- WPテンプレートタグ：必須タグ -->
   <?php wp_head(); ?>
 </head>
 
@@ -72,11 +73,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
+        <!-- WPテンプレートタグ：クエリにループでできる結果があればTRUE -->
+        <?php if(have_posts()): ?>
         <div class="post-preview">
           <a href="post.html">
             <h2 class="post-title">
-              <?php $title = the_title('■', '■', false); ?>
-              <?php echo str_replace('新しい', '古い', $title); ?>
+              <!-- WPテンプレートタグ：投稿記事タイトルがあれば表示 -->
+              <?php the_title(); ?>
             </h2>
             <h3 class="post-subtitle">
               Problems look mighty small from 150 miles up
@@ -130,6 +133,9 @@
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
         </div>
+        <?php else: ?>
+          <p>記事が見つかりませんでした</p>
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -180,7 +186,8 @@
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
 
- <?php wp_footer(); ?>
+  <!-- WPテンプレートタグ：必須タグ -->
+  <?php wp_footer(); ?>
 </body>
 
 </html>
