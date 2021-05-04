@@ -74,12 +74,15 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <!-- WPテンプレートタグ：クエリにループでできる結果があればTRUE -->
-        <?php if (have_posts()) : ?>
+        <?php if (have_posts()): ?>
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
                 <!-- WPテンプレートタグ：投稿記事タイトルがあれば表示 -->
-                <?php the_title(); ?>
+                <?php while(have_posts()): ?>
+                  <?php the_post(); ?>
+                  <?php the_title(); ?>
+                <?php endwhile; ?>
               </h2>
               <h3 class="post-subtitle">
                 Problems look mighty small from 150 miles up
