@@ -78,7 +78,7 @@
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
             <div class="post-preview">
-              <a href="post.html">
+              <a href="<?php the_permalink(); ?>">
                 <h2 class="post-title">
                   <!-- WPテンプレートタグ：投稿記事タイトルがあれば表示 -->
                   <?php the_title(); ?>
@@ -88,7 +88,8 @@
                 </h3>
               </a>
               <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <!-- 管理画面：ユーザー⇛ニックネームと連動 -->
+                <?php the_author(); ?>
                 <?php the_time(get_option('date_format')); ?>
               </p>
             </div>
