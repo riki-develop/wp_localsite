@@ -13,8 +13,13 @@
   <?php while (have_posts()) : the_post(); ?>
     <!-- Page Header -->
     <?php
-    $id = get_post_thumbnail_id();
-    $img = wp_get_attachment_image_src($id);
+    // アイキャッチ画像の指定_有りor無し
+    if(has_post_thumbnail()):
+      $id = get_post_thumbnail_id();
+      $img = wp_get_attachment_image_src($id, 'large');
+    else:
+      $img = array(get_template_directory_uri() . '/img/post-bg.jpg');
+    endif;
     ?>
     <header class="masthead" style="background-image: url('<?php echo $img[0]; ?>')">
       <div class="overlay"></div>
