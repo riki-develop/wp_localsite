@@ -8,20 +8,23 @@
         Menu
         <i class="fas fa-bars"></i>
         </button>
+        <!-- グローバルナビ宣言 -->
+        <?php
+        // メニューIDを取得する
+        $menu_name = 'global_nav';
+        $locations = get_nav_menu_locations();
+        $menu = wp_get_nav_menu_object($locations[$menu_name]);
+        // 取得したオブジェクトから値を取り出す
+        $menu_items = wp_get_nav_menu_items($menu->term_id);
+        // var_dump($menu_items);
+        ?>
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+            <?php foreach($menu_items as $item): ?>
+                <li class="nav-item">
+                <a class="nav-link" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
+                </li>
+            <?php endforeach; ?>
         </ul>
         </div>
     </div>
